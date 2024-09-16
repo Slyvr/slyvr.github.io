@@ -18,6 +18,20 @@
             margin-top: 40px;
             margin-bottom: 20px;
         }
+		 .profile-container {
+            max-width: 700px;
+            text-align: left;
+            padding: 20px;
+            margin: 0 auto;
+        }
+		 .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-content img {
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -42,10 +56,15 @@
     </nav>
 
     <!-- Header -->
-    <header class="bg-primary text-white text-center py-5">
+ <header class="bg-dark text-white py-5">
         <div class="container">
-            <h1>Matthew Schrum</h1>
-            <p class="lead">Senior Integration Developer | Oracle | PL/SQL | Java | PHP</p>
+            <div class="header-content">
+                <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div>
+                    <h1>Matthew Schrum</h1>
+                    <p class="lead">Senior Integration Developer | Oracle | PL/SQL | Java | PHP</p>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -53,10 +72,11 @@
     <section id="profile" class="container text-center">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic mb-4">
                 <h2 class="section-title">Profile</h2>
-                <p>Over 10 years of in-depth experience working as a developer, programmer, and systems analyst with emphasis on integrations and database development. I am a great communicator, problem solver, and team player. I pride myself on writing clean, adaptable code.</p>
-                <p>In my free time, I enjoy developing games in Java with the LibGDX library, doing handyman work, playing board games, and watching sci-fi movies.</p>
+                <div class="profile-container">
+					<p>Over 10 years of in-depth experience working as a developer, programmer, and systems analyst with emphasis on integrations and database development. I am a great communicator, problem solver, and team player. I pride myself on writing clean, adaptable code.</p>
+					<p>In my free time, I enjoy developing games in Java with the LibGDX library, doing handyman work, playing board games, and watching sci-fi movies.</p>
+				</div>
             </div>
         </div>
     </section>
@@ -68,15 +88,15 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <h4>Languages & Technologies</h4>
-                    <p>Oracle, PL/SQL, MSSQL, T-SQL, MySQL, Java, C#, PHP, Javascript, React, Unix/SHL, Spring, Hibernate</p>
+                    <p>PL/SQL, Transact-SQL, MySQL, PostgreSQL, Java, C#, PHP, Javascript, ReactJS, NodeJS, Unix Shell Scripting, Spring, Hibernate</p>
                 </div>
                 <div class="col-md-4">
                     <h4>Tools & Frameworks</h4>
-                    <p>Git, SVN, Tomcat, JBoss, Websphere, Postman, DataStage, Insomnia, Eclipse, LibGDX, Visual Studio Code</p>
+                    <p>Git, SVN, Tomcat, JBoss, Websphere, Postman, DataStage, Bruno, Eclipse, Visual Studio Code, Toad For Oracle, Maven, Gradle, LibGDX</p>
                 </div>
                 <div class="col-md-4">
                     <h4>Development Concepts</h4>
-                    <p>OOP, MVC, ECS, JSON, XML, APIs, Maven, Gradle, Version Control</p>
+                    <p>Object-Oriented Programming, Model-View-Container, Entity-Component-System, Extract-Transform-Load, JSON, XML, XSL, Rest API</p>
                 </div>
             </div>
         </div>
@@ -90,22 +110,25 @@
                 <h4>Senior Integration Developer</h4>
                 <p><strong>St. Louis Community College - Bridgeton, MO</strong> <em>(July 2017 – Present)</em></p>
                 <ul>
-                    <li>Responsible for all HR/Payroll automated jobs and custom processes built within Ellucian Banner ERP solution.</li>
+                    <li>Responsible for HR/Payroll automated jobs and custom processes built within Ellucian Banner ERP solution.</li>
                     <li>Developed PL/SQL packages and SHL scripts to build reports and process data.</li>
-                    <li>Created a Java program to build custom PDF reports via XML and XSL.</li>
+					<li>Designed new programs to build custom PDF reports that were previously incapable in our limited development environment.</li>
                     <li>Developed integrations with N2N’s Illuminate API service.</li>
+					<li>Maintained communication with external vendors to setup SFTP and file encryption keys.</li>
                 </ul>
 
                 <h4>Programmer / Analyst</h4>
                 <p><strong>Boeing - Hazelwood, MO</strong> <em>(May 2015 – July 2017)</em></p>
                 <ul>
                     <li>Worked extensively with DataStage to process Oracle data and develop XSL forms.</li>
+					<li>Researched and resolved issues within the Oracle database and working closely with the Integrations Team to transform and load data to/from other applications.</li>
                 </ul>
 
                 <h4>Java Web Application Developer II</h4>
                 <p><strong>Maritz - Fenton, MO</strong> <em>(June 2013 – March 2015)</em></p>
                 <ul>
                     <li>Developed custom web applications using Maritz's Java web application framework.</li>
+					<li>Resolving issues and developing new features within a primarily Microsoft SQL Server environment using T-SQL in JBoss or Tomcat web servers.</li>
                 </ul>
             </div>
         </div>
@@ -124,8 +147,6 @@
         <h2 class="text-center section-title">Contact</h2>
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <p><strong>Email:</strong> <a href="mailto:mschrum89@gmail.com">mschrum89@gmail.com</a></p>
-                <p><strong>Phone:</strong> (314) 835-7591</p>
                 <p><strong>Website:</strong> <a href="http://matthewschrum.com">matthewschrum.com</a></p>
                 <p><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/mschrum">linkedin.com/in/mschrum</a></p>
             </div>

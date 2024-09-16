@@ -1,63 +1,137 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="matthewschrum.com">
-    <meta name="keywords" content="programming, art, portfolio, resume, personal, gaming, developer, development">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>matthew schrum</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/custom.css" type="text/css">
+    <title>Matthew Schrum - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-	
-	<div class="maincontent">
-		matthew schrum dot com<br/><br />
-		hey there.<br />
-		welcome.<br />
-		nice to meet you.<br />
-		i'm matthew.<br />
-		this is my website.<br />
-		um.<br />
-		not sure what else to say.<br />
-		so check out some of this stuff.<br />
-		<a href="https://github.com/Slyvr">github</a><br />
-		<a href="https://www.youtube.com/channel/UCF1z8R_51gC4aacyE3We5DA">youtube</a><br /><br />
-		want to get to know me even more?<br />
-		well, aren't you nosy.<br />
-		i guess i can say more <a href="about.html">here</a>.<br />
-		
-	</div>
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Matthew Schrum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Matthew Schrum</h1>
+            <p class="lead">Senior Integration Developer | Oracle | PL/SQL | Java | PHP</p>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile" class="container text-center">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic mb-4">
+                <h2 class="section-title">Profile</h2>
+                <p>Over 10 years of in-depth experience working as a developer, programmer, and systems analyst with emphasis on integrations and database development. I am a great communicator, problem solver, and team player. I pride myself on writing clean, adaptable code.</p>
+                <p>In my free time, I enjoy developing games in Java with the LibGDX library, doing handyman work, playing board games, and watching sci-fi movies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Key Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Languages & Technologies</h4>
+                    <p>Oracle, PL/SQL, MSSQL, T-SQL, MySQL, Java, C#, PHP, Javascript, React, Unix/SHL, Spring, Hibernate</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Tools & Frameworks</h4>
+                    <p>Git, SVN, Tomcat, JBoss, Websphere, Postman, DataStage, Insomnia, Eclipse, LibGDX, Visual Studio Code</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Development Concepts</h4>
+                    <p>OOP, MVC, ECS, JSON, XML, APIs, Maven, Gradle, Version Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container py-5">
+        <h2 class="text-center section-title">Professional Experience</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h4>Senior Integration Developer</h4>
+                <p><strong>St. Louis Community College - Bridgeton, MO</strong> <em>(July 2017 – Present)</em></p>
+                <ul>
+                    <li>Responsible for all HR/Payroll automated jobs and custom processes built within Ellucian Banner ERP solution.</li>
+                    <li>Developed PL/SQL packages and SHL scripts to build reports and process data.</li>
+                    <li>Created a Java program to build custom PDF reports via XML and XSL.</li>
+                    <li>Developed integrations with N2N’s Illuminate API service.</li>
+                </ul>
+
+                <h4>Programmer / Analyst</h4>
+                <p><strong>Boeing - Hazelwood, MO</strong> <em>(May 2015 – July 2017)</em></p>
+                <ul>
+                    <li>Worked extensively with DataStage to process Oracle data and develop XSL forms.</li>
+                </ul>
+
+                <h4>Java Web Application Developer II</h4>
+                <p><strong>Maritz - Fenton, MO</strong> <em>(June 2013 – March 2015)</em></p>
+                <ul>
+                    <li>Developed custom web applications using Maritz's Java web application framework.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Education</h2>
+            <p class="text-center">Bachelor of Science in Computer Information Systems <br> Missouri State University - Springfield, MO <br> (2013)</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="text-center section-title">Contact</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <p><strong>Email:</strong> <a href="mailto:mschrum89@gmail.com">mschrum89@gmail.com</a></p>
+                <p><strong>Phone:</strong> (314) 835-7591</p>
+                <p><strong>Website:</strong> <a href="http://matthewschrum.com">matthewschrum.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/mschrum">linkedin.com/in/mschrum</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
